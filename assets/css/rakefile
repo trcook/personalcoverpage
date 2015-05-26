@@ -1,0 +1,22 @@
+require 'rake'
+
+
+my_less_files=FileList[Dir.glob("./**/*.less", File::FNM_CASEFOLD)]
+my_css_files=my_less_files.ext('.css')
+
+
+def compile_css(source, name) 
+	sh %Q{lessc #{source} #{name}&autoprefixer #{name}}
+	puts $?
+end
+
+task :default do
+	my_less_files.each do |t|
+	compile_css(t.ext('less'),t.ext('css'))
+	end
+
+end 
+
+task :default=>my_css_files
+
+file my_css_files=>my_less_files
