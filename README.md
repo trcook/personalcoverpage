@@ -11,3 +11,4 @@ I also changed a number of aspects of the layout from singlepaged so that they s
 
 You can see the site in action at [thomasrcook.com](http://www.thomasrcook.com)
 
+It's not my intention that anyone would use this as a template for their site. I post it here for my own personal backup purposes and to allow others to see how I've coded things (if they're interested).
