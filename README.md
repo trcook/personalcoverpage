@@ -1,3 +1,5 @@
+[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/trcook/personal-website)
+
 # Project
 Personal One-page website with deployment scripts
 
